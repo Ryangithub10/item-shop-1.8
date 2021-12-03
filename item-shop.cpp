@@ -1,12 +1,51 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char *argv[])
-{
 	char buy;
 	char buyitem;
 	char buyacces;
 	char buyweapon;
+
+void acces() {
+	char con;
+	int count;
+
+	//second loop
+	while (true) {
+
+		puts("what do you want\n");
+
+		puts("1. ring exp\t\t DRP.5000");
+		puts("2. digital vest\t\t DRP.13000");
+		puts("3. stamina capsul pouch\t DRP.8000");
+		puts("4. back\n");
+
+		printf(":");
+		cin >> buyacces;
+
+		if (buyacces == '1') {
+			puts("ring exp\n");
+			puts("give a bonus exp up to +10\n");
+			printf("do you want to buy it y/n: ");
+			cin >> con;
+
+			if (con == 'y') {
+				printf("how many: ");
+				cin >> count;
+				int total = count * 5000;
+
+				printf("you buy %d ring exp with price: DRP.%d", count, total);
+			}
+		}
+		else {
+			break;
+		}
+	}
+}
+
+
+int main(int argc, char *argv[])
+{
 	char con;
 	int count;
 
@@ -73,6 +112,9 @@ int main(int argc, char *argv[])
 				}
 			}
 			//end second loop
+		}	
+		else if (buy == '2') {
+			acces();
 		}
 		else if (buy == '4') {
 			break;
