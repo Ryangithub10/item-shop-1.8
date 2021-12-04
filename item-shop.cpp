@@ -5,10 +5,30 @@ using namespace std;
 	char buyitem;
 	char buyacces;
 	char buyweapon;
-
-void acces() {
 	char con;
+	int total;
+
+void selectA(char x) {
 	int count;
+
+	if (x == '1') {
+		puts("ring exp\n");
+		puts("give a bonus exp up to +10\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			printf("how many: ");
+			cin >> count;
+
+			total = count * 5000;
+
+			printf("you buy %d ring exp with price: DRP.%d\n\n", count, total);
+		}
+	}
+}
+
+void acces() {	
 
 	//second loop
 	while (true) {
@@ -23,25 +43,15 @@ void acces() {
 		printf(":");
 		cin >> buyacces;
 
-		if (buyacces == '1') {
-			puts("ring exp\n");
-			puts("give a bonus exp up to +10\n");
-			printf("do you want to buy it y/n: ");
-			cin >> con;
-
-			if (con == 'y') {
-				printf("how many: ");
-				cin >> count;
-				int total = count * 5000;
-
-				printf("you buy %d ring exp with price: DRP.%d", count, total);
-			}
-		}
-		else {
+		selectA(buyacces);
+		
+		if (buyacces == '4') {
 			break;
 		}
 	}
+
 }
+
 
 
 int main(int argc, char *argv[])
