@@ -177,14 +177,18 @@ int main(int argc, char *argv[])
 			cin >> buy;
 		}
 
-		//start second loop
-		if (buy == '1') {
-			item();
-		}	
-		else if (buy == '2') {
-			acces();
+		
+		switch(buy) {
+			case '1':
+				item();
+				break;
+
+			case '2':
+				acces();
+				break;
 		}
-		else if (buy == '4') {
+
+		if (buy == '4') {
 			break;
 		}
 	}
