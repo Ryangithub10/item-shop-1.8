@@ -8,6 +8,7 @@ using namespace std;
 	char con;
 	int total;
 
+//Show the status and be sure you to buy it and it's stick in item function
 void selectI(char x) {
 	int count;
 
@@ -79,6 +80,7 @@ void selectI(char x) {
 
 }
 
+//Same like in above, but the different is for function accessory
 void selectA(char x) {
 	int count;
 
@@ -99,6 +101,7 @@ void selectA(char x) {
 	}
 }
 
+//Show a item menu's
 void item() {
 	//second loop
 	while (true) {
@@ -123,6 +126,7 @@ void item() {
 	}
 }
 
+//Same like abouve, but a different is it's will show a accessory menu
 void acces() {	
 
 	//second loop
