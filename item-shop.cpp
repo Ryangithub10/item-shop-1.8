@@ -99,6 +99,51 @@ void selectA(char x) {
 			printf("you buy %d ring exp with price: RP.%d\n\n", count, total);
 		}
 	}
+	else if (x == '2') {
+		puts("digital vest\n");
+		puts("DEF: +15\t SPD: +12\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			printf("how many: ");
+			cin >> count;
+
+			total = count * 13000;
+
+			printf("you buy %d digital vest with price: RP.%d\n\n", count, total);
+		}
+	}
+	else if (x == '3') {
+		puts("stamina capsul pouch\n");
+		puts("SPMAX: +10\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			printf("how many: ");
+			cin >> count;
+
+			total = count * 8000;
+
+			printf("you buy %d stamina capsul pouch with price: RP.%d\n\n", count, total);
+		}
+	}
+	else if (x == '4') {
+		puts("heavy armor\n");
+		puts("DEF: +20\t SPD: -8\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			printf("how many: ");
+			cin >> count;
+
+			total = count * 8000;
+
+			printf("you buy %d heavy armor with price: RP.%d\n\n", count, total);
+		}
+	}
 }
 
 //Show a item menu's
@@ -137,14 +182,15 @@ void acces() {
 		puts("1. ring exp\t\t RP.5000");
 		puts("2. digital vest\t\t RP.13000");
 		puts("3. stamina capsul pouch\t RP.8000");
-		puts("4. back\n");
+		puts("4. heavy armor\t\t RP.8000");
+		puts("5. back\n");
 
 		printf(":");
 		cin >> buyacces;
 
 		selectA(buyacces);
 		
-		if (buyacces == '4') {
+		if (buyacces == '5') {
 			break;
 		}
 	}
