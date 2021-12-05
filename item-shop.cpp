@@ -146,6 +146,19 @@ void selectA(char x) {
 	}
 }
 
+void selectW(char x) {
+	if (x == '1') {
+		puts("X saber\n");
+		puts("ATK: +10\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			puts("you buy a X saber\n");
+		}
+	}
+}
+
 //Show a item menu's
 void item() {
 	//second loop
@@ -206,9 +219,12 @@ void weapon() {
 		puts("2. digital cresent\t RP.30000");
 		puts("3. neo buster gun\t RP.23000");
 		puts("4. neo devil gun\t RP.29000");
-		puts("5. back");
+		puts("5. back\n");
 
+		printf(":");
 		cin >> buyweapon;
+
+		selectW(buyweapon);
 
 		if (buyweapon == '5') {
 			break;
