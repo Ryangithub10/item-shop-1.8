@@ -197,7 +197,25 @@ void acces() {
 
 }
 
+void weapon() {
+	while (true) {
+		
+		puts("what do you want\n");
 
+		puts("1. X saber\t\t RP.30000");
+		puts("2. digital cresent\t RP.30000");
+		puts("3. neo buster gun\t RP.23000");
+		puts("4. neo devil gun\t RP.29000");
+		puts("5. back");
+
+		cin >> buyweapon;
+
+		if (buyweapon == '5') {
+			break;
+		}
+
+	}
+}
 
 int main(int argc, char *argv[])
 {
@@ -235,6 +253,10 @@ int main(int argc, char *argv[])
 
 			case '2':
 				acces();
+				break;
+
+			case '3':
+				weapon();
 				break;
 		}
 
