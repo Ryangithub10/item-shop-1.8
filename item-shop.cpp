@@ -157,6 +157,36 @@ void selectW(char x) {
 			puts("you buy a X saber\n");
 		}
 	}
+	else if (x == '2') {
+		puts("digital cresent\n");
+		puts("ATK: +18\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			puts("you buy a digital cresent\n");
+		}
+	}
+	else if (x == '3') {
+		puts("neo buster gun\n");
+		puts("ATK: +15\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			puts("you buy a neo buster gun\n");
+		}
+	}
+	else if (x == '4') {
+		puts("neo devil gun\n");
+		puts("ATK: +17\n");
+		printf("do you want buy it y/n: ");
+		cin >> con;
+
+		if (con == 'y') {
+			puts("you buy a neo devil gun\n");
+		}
+	}
 }
 
 //Show a item menu's
