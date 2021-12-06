@@ -1,4 +1,4 @@
-# Item Shop2.0
+# Item Shop1.8
 Hei, it's a Item Shop Repo next version i make.
 
 like the name, it is will show you a shop on RPG with command line base.
